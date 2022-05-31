@@ -19,15 +19,11 @@ const modulus = function(a, b) {
 };
 
 const even = function(number) {
-    if (number % 2 == 0) {
-        return true;
-    }
+    return Boolean(number % 2 == 0);
 };
 
 const odd = function(number) {
-    if (!(number % 2 == 0)) {
-        return true;
-    }
+    return Boolean(!(number % 2 == 0))
 };
 
 module.exports = { 
